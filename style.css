@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+body{
+    background-color: var(--Light-Gray);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+.box{
+    background-color: white;
+    width: 600px;
+    box-shadow: 26px 18px 26px -4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+.top{
+    flex-direction: column;
+    display: flex;
+    padding: 30px;
+}
+.join{
+    color: var(--Cyan);
+    font-size: 22px;
+    font-weight: bold;
+}
+.second-join{
+    color: var(--Bright-Yellow);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 30px 0px 10px 0;
+}
+.para{
+    color: var(--Grayish-Blue);
+    padding: 10px 0 20px 0;
+    line-height: 25px;
+}
+.divide{
+    display: flex;
+}
+.divide > .left {
+    background-color: var(--Cyan);
+    padding: 30px;
+    width: 50%;
+    border-radius: 0 0 0 10px;
+}
+.left > .month{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.left > .dollar{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding: 20px 0px 10px 0px;
+}
+.dollar > .months{
+    color: var(--Grayish-Blue);
+    font-size: 16px;
+    font-weight: normal;
+}
+.left > .full{
+    color: var(--Light-Gray);
+    padding: 10px 0 10px 0;
+}
+.left > button{
+    margin-top: 20px;
+    background-color: var(--Bright-Yellow);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    border: none;
+}
+.left > button:hover{
+   transition: 0.5s ;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.divide > .right{
+    width: 50%;
+    padding: 30px;
+background-color: hsl(179, 79%, 45%);
+border-radius: 0 0 10px 0;
+}
+.right > .us{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.right > .text{
+    padding-top: 20px;
+    color: var(--Light-Gray);
+    line-height: 25px;
+}
